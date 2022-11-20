@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SteakAI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="/static/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="big-head">
+			<div style="text-align:center;">
+				<picture>
+					<img src="/static/steak.png" alt="A group celebrating" width="300" height="200">
+				</picture>
+			</div>
+
+			<div class="message">
+				<h1>Welcome to SteakAI!<br>Is your steak cooked properly?</h1>
+				<h2>Give a photo of your steak below and press Upload</h2>
+			</div>
+		</div>
+
+        <form method=post enctype=multipart/form-data style="text-align:center;">
+            <input type=file name=file class="btns", style="color:black; background-color: white;">
+            <input type=submit value=Upload>
+        </form>  
+
+        <p style="color:red; text-align: center;">
+            Incorrect file format, please submit a .jpg, .jpeg, or .png file
+        </p>
+
+	</div>
+</body>
+</html>
